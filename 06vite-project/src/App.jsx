@@ -1,10 +1,25 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
+import LoggerComponents from './components/LoggerComponents'
+import TimerComponents from './components/TimerComponents'
 import './App.css'
+import DataFetcher from './components/DataFetcher'
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [total, setTotal] = useState(1);
+  return (
+    <div>
+      <DataFetcher />
+      {/* <TimerComponents /> */}
+      {/* <LoggerComponents /> */}
+    </div>
+  )
+}
+
+export default App
+
+  
+  // const [count, setCount] = useState(0);
+  // const [total, setTotal] = useState(1);
   // useEffect is a hook that allows you to perform side effects in function components
   // first -> side-effect function
   // second -> cleanup function
@@ -36,28 +51,28 @@ function App() {
 
   // variation: 5
   // lets add cleanup function
-  useEffect(() => {
-    alert('Component mounted!')
-    return () => {
-      alert('Component unmounted!')
-    }
-  },[count])
+  // useEffect(() => {
+  //   alert('Component mounted!')
+  //   return () => {
+  //     alert('Component unmounted!')
+  //   }
+  // },[count])
 
-  function handleClick(){
-    setCount(count + 1);
-    // setTotal(total + 1);
-  }
- return (
-  <div>
-    <button onClick={handleClick}>
-      click me
-    </button>
-    <br />
-    Count is : {count}
-    <br />
-    Total is : {total}
-  </div>
- )
+  // function handleClick(){
+  //   setCount(count + 1);
+  //   // setTotal(total + 1);
+  // }
+//  return (
+//   <div>
+//     <button onClick={handleClick}>
+//       click me
+//     </button>
+//     <br />
+//     Count is : {count}
+//     <br />
+//     Total is : {total}
+//   </div>
+//  )
 
   // useEffect(() =>{
   //   first
@@ -69,6 +84,6 @@ function App() {
 //   return (
 //     <div>hi</div>
 //   )
-}
 
-export default App
+
+
