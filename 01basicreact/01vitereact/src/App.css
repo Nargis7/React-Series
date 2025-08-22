@@ -1,0 +1,9 @@
+/* Wrapper for multiple cards */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;   /* Center cards horizontally */
+  align-items: center;       /* Align vertically */
+  gap: 20px;                 /* Space between cards */
+  flex-wrap: wrap;           /* Makes it responsive (wraps on smaller screens) */
+  margin-top: 30px;
+}
