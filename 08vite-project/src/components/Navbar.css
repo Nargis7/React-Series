@@ -1,0 +1,13 @@
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  background-color: aqua;
+}
+
+.active{
+  border: 2px solid red;
+  padding: 5px;
+  border-radius: 5px;
+}
