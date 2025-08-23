@@ -4,13 +4,17 @@ import LoggerComponents from './components/LoggerComponents'
 import TimerComponents from './components/TimerComponents'
 import './App.css'
 import DataFetcher from './components/DataFetcher'
+import ResizeComponent from './components/ResizeComponent'
+import MultiEffectComponent from './components/MultiEffectComponent'
 
 function App() {
   return (
     <div>
-      <DataFetcher />
+      {/* <DataFetcher /> */}
       {/* <TimerComponents /> */}
       {/* <LoggerComponents /> */}
+      {/* <ResizeComponent /> */}
+      <MultiEffectComponent />
     </div>
   )
 }
