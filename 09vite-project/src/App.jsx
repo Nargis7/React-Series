@@ -6,7 +6,6 @@ const[count, setCount] = useState(0)
 const addValue = () => {
   setCount(count + 1);
 }
-
 const removeValue = () => {
   setCount(count - 1);
 }
